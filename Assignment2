@@ -1,0 +1,47 @@
+
+
+package rockpaperse;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class RockPaperSe {
+
+    
+    public static void main(String[] args) {
+       Scanner k=new Scanner(System.in);
+       Random r=new Random();
+       String computerPlay="rps";
+       do{
+           System.out.println("if you want to play enter :\n(r or R) for rock \n(p or P)for paper\n(s or S)for scissors\nor enter any key to exit ");
+           String s=k.next();
+           s=s.toLowerCase();
+           char x=s.charAt(0);
+           if(x!='r'&&x!='p'&&x!='s'){
+               System.out.println("go");
+               break;}
+           else{
+               char computerChoice=computerPlay.charAt(r.nextInt(computerPlay.length()));
+               if(x=='r'&&computerChoice=='r')
+                   System.out.println("no wine");
+               else if(x=='r'&&computerChoice=='p')
+                   System.out.println("you wine");
+               else if(x=='r'&&computerChoice=='s')
+                   System.out.println("I wine");
+               else if(x=='p'&&computerChoice=='p')
+                   System.out.println("no wine");
+               else if(x=='p'&&computerChoice=='r')
+                   System.out.println("i wine");
+               else if(x=='p'&&computerChoice=='s')
+                   System.out.println("you wine");
+               else if(x=='s'&&computerChoice=='s')
+                   System.out.println("no wine");
+               else if(x=='s'&&computerChoice=='p')
+                   System.out.println("i wine");
+               else if(x=='s'&&computerChoice=='r')
+                   System.out.println("you wine");
+           }
+           System.out.println("\n");
+       }while(true);
+       }  
+}
