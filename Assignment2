@@ -4,7 +4,12 @@ package rockpaperse;
 
 import java.util.Random;
 import java.util.Scanner;
+// your grade is 4/5
 
+//change the file name to be like Assignment2.java
+
+//remove public from class
+//change the class name to be as same as the file name
 public class RockPaperSe {
 
     
